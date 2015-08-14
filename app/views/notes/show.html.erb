@@ -2,3 +2,5 @@
 <p><%= @kurac.content %></p>
 
 <%= link_to "All Notes", notes_path %>
+<%= link_to "Edit", edit_note_path(@kurac) %>
+<%= link_to "Delete", note_path(@kurac), method: :delete, data: { confirm: "Oces stvarno da obrises ovaj kurac?" } %>

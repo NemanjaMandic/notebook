@@ -27,9 +27,16 @@ class NotesController < ApplicationController
     end
     
     def update
+        if @kurac.update(note_params)
+            redirect_to @kurac
+        else
+            render 'edit'
+        end
     end
     
     def destroy
+        @kurac.destroy
+        redirect_to notes_path
     end
     
     private
