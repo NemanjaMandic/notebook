@@ -1,0 +1,4 @@
+<% @sise.each do |sisa| %>
+ <h2><%= link_to sisa.title, sisa %></h2>
+ <p><%= time_ago_in_words(sisa.created_at) %></p>
+<% end %>
