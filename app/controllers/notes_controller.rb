@@ -9,12 +9,12 @@ class NotesController < ApplicationController
     end
     
     def new
-        @kurac = Note.new
+        @kurac = current_user.notes.build
        
     end
     
     def create
-         @kurac = Note.new(note_params)
+         @kurac = current_user.notes.build(note_params)
          
          if @kurac.save
              redirect_to @kurac
