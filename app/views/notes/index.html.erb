@@ -1,6 +1,29 @@
-<% @sise.each do |sisa| %>
- <h2><%= link_to sisa.title, sisa %></h2>
- <p><%= time_ago_in_words(sisa.created_at) %></p>
+<div class="wrapper_with_padding">
+ <div id="note" class="clearfix">
+  <% unless @sise.blank? %>
+    
+    <% @sise.each do |sisa| %>
+    
+      <a href="<%= (url_for [sisa] ) %>">
+       <div class="note">
+        <p class="title">
+          <%= sisa.title %>
+        </p>
+        </a>
+        <p class="date"><%= time_ago_in_words(sisa.created_at) %></p>
+       </div>
+      
+  
 <% end %>
 
+<% else %>
+ <h2>Add a Note</h2>
+  <p>It appears you haven't created any notes yet... Lets fix that. Why don't you go ahead and create a new note.</p>
+  <button>
+     <%= link_to "New Note", new_note_path %>
+  </button>
+  <% end %>
+ </div>
+
+</div>
 
