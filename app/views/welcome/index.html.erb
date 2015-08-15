@@ -1,4 +1,56 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<div id="banner">
+    <div class="banner_content">
+        <h1>NoteNote</h1>
+        <p>Your online notebook. Never forget an idea again.</p>
+        <button>
+            <%= link_to "Sign Up", new_user_registration_path %>
+        </button>
+    </div><!--END banner_content-->
+</div><!--END id="banner"-->
 
-************************* 49:07 ******************************
+<div id="testimonial">
+    <div class="wrapper">
+        <p class="quote">"The greatest notebook application. Period."</p>
+        <p class="name">- John Johnson</p>
+    </div><!--END wrapper-->
+</div><!--END id="testimonial"-->
+
+<div id="callouts">
+    <div class="callout_inner">
+        <div class="wrapper">
+            <div class="callout">
+                <h2>Notes</h2>
+                <p>Readymade narwhal hashtag yr, sartorial direct trade whatever. Polaroid Portland Neutra YOLO, four dollar toast mlkshk vegan biodiesel forage chillwave bitters narwhal.
+                    Polaroid street art pug pour-over. PBR&B +1 pug keffiyeh stumptown shabby chic. Salvia pour-over occupy church-key, pickled Banksy Austin. 
+                    Tousled disrupt bitters, asymmetrical semiotics Tumblr Shoreditch pug 8-bit stumptown Carles. Brooklyn sriracha Kickstarter four loko.
+               </p>
+            </div><!--END callout-->
+            <div class="callout">
+                <h2>Rocket</h2>
+                <p>Readymade narwhal hashtag yr, sartorial direct trade whatever. Polaroid Portland Neutra YOLO, four dollar toast mlkshk vegan biodiesel forage chillwave bitters narwhal.
+                    Polaroid street art pug pour-over. PBR&B +1 pug keffiyeh stumptown shabby chic. Salvia pour-over occupy church-key, pickled Banksy Austin. 
+                    Tousled disrupt bitters, asymmetrical semiotics Tumblr Shoreditch pug 8-bit stumptown Carles. Brooklyn sriracha Kickstarter four loko.
+               </p>
+            </div><!--END callout-->
+            <div class="callout">
+                <h2>Lightening</h2>
+                <p>Readymade narwhal hashtag yr, sartorial direct trade whatever. Polaroid Portland Neutra YOLO, four dollar toast mlkshk vegan biodiesel forage chillwave bitters narwhal.
+                    Polaroid street art pug pour-over. PBR&B +1 pug keffiyeh stumptown shabby chic. Salvia pour-over occupy church-key, pickled Banksy Austin. 
+                    Tousled disrupt bitters, asymmetrical semiotics Tumblr Shoreditch pug 8-bit stumptown Carles. Brooklyn sriracha Kickstarter four loko.
+               </p>
+            </div><!--END callout-->
+        </div><!--END wrapper-->
+    </div><!--END callout_inner"-->
+</div><!--END id="callouts"-->
+
+<div id="bottom_cta">
+    <div class="wrapper">
+        <h2>For Realz!</h2>
+        <p>I want you to sign up ... </p>
+        <button><%= link_to "Klikni Ovde!!!", new_user_registration_path %></button>
+    </div><!--END wrapper-->
+</div><!--END id="bottom_cta"-->
+
+<footer>
+    <p>&copy; NoteBook</p>
+</footer>
