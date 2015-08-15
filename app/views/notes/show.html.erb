@@ -1,6 +1,12 @@
-<h1><%= @kurac.title %></h1>
-<p><%= @kurac.content %></p>
-
-<%= link_to "All Notes", notes_path %>
-<%= link_to "Edit", edit_note_path(@kurac) %>
-<%= link_to "Delete", note_path(@kurac), method: :delete, data: { confirm: "Oces stvarno da obrises ovaj kurac?" } %>
+<div class="wrapper_with_padding">
+    <div id="note_show">
+        <h1 class="title"><%= @kurac.title %></h1>
+            <p><%= simple_format(@kurac.content) %></p>
+            
+            <div class="buttons">
+                <%= link_to "Back", notes_path, class: "button" %>
+                <%= link_to "Edit", edit_note_path(@kurac), class: "button" %>
+                <%= link_to "Delete", note_path(@kurac), method: :delete, data: { confirm: "Oces stvarno da obrises ovaj kurac?" }, class: "button" %>
+            </div>
+    </div>
+</div>

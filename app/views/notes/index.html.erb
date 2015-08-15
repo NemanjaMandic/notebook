@@ -1,5 +1,5 @@
 <div class="wrapper_with_padding">
- <div id="note" class="clearfix">
+ <div id="notes" class="clearfix">
   <% unless @sise.blank? %>
     
     <% @sise.each do |sisa| %>
@@ -9,10 +9,10 @@
         <p class="title">
           <%= sisa.title %>
         </p>
-        </a>
+       
         <p class="date"><%= time_ago_in_words(sisa.created_at) %></p>
        </div>
-      
+       </a>
   
 <% end %>
 
